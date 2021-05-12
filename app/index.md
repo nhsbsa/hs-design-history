@@ -1,13 +1,13 @@
 ---
 layout: collection
-title: "A design history for your NHSBSA service"
-description: "Document and share design decisions. Create a permanent record of how your service has developed over time."
+title: "Get healthcare cover for travelling abroad"
+description: "Document and share design decisions, keeping a record of designs we have created."
 pagination:
   data: collections.all
   reverse: true
   size: 50
 posts:
-  title: Getting started
+  title: Posts
 eleventyComputed:
   eleventyNavigation:
     key: home
