@@ -82,3 +82,8 @@ a.nhsuk-footer__list-item-link:visited {
   }
 }
 /* /. */
+
+// Remove max-width from the header logo/service name
+.nhsuk-header__logo--only .nhsuk-header__link--service {
+  max-width: 100%;
+}
