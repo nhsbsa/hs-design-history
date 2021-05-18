@@ -87,3 +87,13 @@ a.nhsuk-footer__list-item-link:visited {
 .nhsuk-header__logo--only .nhsuk-header__link--service {
   max-width: 100%;
 }
+
+// Custom width for cards
+.nhsbsa-card__flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nhsbsa-card__one-third {
+  width: 30.2%;
+  margin-right: 30px;
+}
