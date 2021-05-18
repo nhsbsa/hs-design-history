@@ -42,7 +42,7 @@
       <div class="nhsuk-grid-row">
         {# Paginate posts if front matter includes the pagination key #}
         {% if pagination %}
-          <section class="nhsuk-grid-column-two-thirds">
+          <section class="nhsuk-grid-column-full">
             <h2 class="nhsuk-heading-l nhsuk-!-font-size-27">
               {{ posts.title or app.posts.title or "Posts" }}
             </h2>
@@ -75,17 +75,21 @@
         {% elif eleventyNavigation.key == "home" %}
           <div class="nhsuk-grid-column-full">
             <h2 class="nhsuk-heading-l nhsuk-!-font-size-27">
-              {{ sections.title or app.sections.title or "Sections" }}
+              {{ sections.title or app.sections.title or "Sprints" }}
             </h2>
           </div>
-          {% for item in collections.all | eleventyNavigation("home") %}
-            <section class="nhsuk-grid-column-one-half nhsuk-!-margin-bottom-6">
-              <h3 class="nhsuk-heading-m nhsuk-!-margin-bottom-1">
-                <a href="{{ item.url | url | pretty }}">{{ item.title }}</a>
-              </h3>
-              <p class="nhsuk-body">{{ item.excerpt }}</p>
-            </section>
-          {% endfor %}
+          <div class="nhsuk-grid-column-full nhsbsa-card__flex">
+            {% for item in collections.all | eleventyNavigation("home") %}
+              <div class="nhsuk-card nhsbsa-card__one-third">
+                <section class="nhsuk-card__content">
+                  <h3 class="nhsuk-card__heading nhsuk-!-margin-bottom-1">
+                    <a href="{{ item.url | url | pretty }}">{{ item.title }}</a>
+                  </h3>
+                  <p class="nhsuk-body">{{ item.excerpt }}</p>
+                </section>
+              </div>
+            {% endfor %}
+          </div>
         {% endif %}
       </div>
     {% endblock %}

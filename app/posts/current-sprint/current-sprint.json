@@ -1,0 +1,6 @@
+{
+    "tags": ["current-sprint"],
+    "eleventyNavigation": {
+      "parent": "Current Sprint"
+    }
+  }
