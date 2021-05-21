@@ -1,5 +1,5 @@
 /*
-    Run: node scripts/generate-sprint.js
+    Run: node scripts/generate-section.js
 */
 
 // Dependencies
@@ -26,7 +26,7 @@ function warnIfNoArguments(title) {
     // TODO: Use a better check for an argument
     if (directoryName.startsWith('/Users')) {
         console.log('No arguments set')
-        console.log('Please set a title: `node scripts/generate-sprint "Title of sprint"`')
+        console.log('Please set a title: `node scripts/generate-section "Title of section"`')
     }
 }
 
@@ -84,16 +84,16 @@ eleventyComputed:
     // =================================================================
     var genericTemplate = ''
     const genericTemplateStart = `---
-title: Generic Post Title
+title: Sprint [number]
 description: Generic Desciption
-date: YYYY-MM-DD
+date: 
 ---
         
 Example post
         `
     const genericTemplateEnd = `
         `
-    const genericFilename = `${postDirectory}/YYYY-MM-DD-${directoryName}.md`
+    const genericFilename = `${postDirectory}/YYYY-MM-DD-sprint-number.md`
 
     // Write MD file
     fs.writeFile(
