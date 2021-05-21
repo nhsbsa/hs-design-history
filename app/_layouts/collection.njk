@@ -42,9 +42,9 @@
       <div class="nhsuk-grid-row">
         {# Paginate posts if front matter includes the pagination key #}
         {% if pagination %}
-          <section class="nhsuk-grid-column-full">
+          <section class="nhsuk-grid-column-two-thirds">
             <h2 class="nhsuk-heading-l nhsuk-!-font-size-27">
-              {{ posts.title or app.posts.title or "Posts" }}
+              {{ "Posts" }}
             </h2>
             {{ appDocumentList({
               classes: "nhsuk-!-margin-bottom-6",
@@ -63,34 +63,55 @@
               items: pagination.hrefs
             }) }}
           </section>
-          {% if related %}
-            <div class="nhsuk-grid-column-one-third">
-              {{ appRelated({
-                title: related.title or "Related links",
-                items: related.items
-              }) }}
-            </div>
-          {% endif %}
         {# List sections (pages whose parent is `home`) if homepage with no pagination key set #}
         {% elif eleventyNavigation.key == "home" %}
-          <div class="nhsuk-grid-column-full">
+          <div class="nhsuk-grid-column-two-thirds">
             <h2 class="nhsuk-heading-l nhsuk-!-font-size-27">
-              {{ sections.title or app.sections.title or "Sprints" }}
+              {{ sections.title or app.sections.title or "Phases" }}
             </h2>
           </div>
-          <div class="nhsuk-grid-column-full nhsbsa-card__flex">
-            {% for item in collections.all | eleventyNavigation("home") %}
-              <div class="nhsuk-card nhsbsa-card__one-third">
-                <section class="nhsuk-card__content">
-                  <h3 class="nhsuk-card__heading nhsuk-!-margin-bottom-1">
-                    <a href="{{ item.url | url | pretty }}">{{ item.title }}</a>
-                  </h3>
-                  <p class="nhsuk-body">{{ item.excerpt }}</p>
-                </section>
-              </div>
-            {% endfor %}
-          </div>
+          <section class="govuk-grid-column-two-thirds">
+            <div class="nhsuk-grid-row">
+              {% for item in collections.all | eleventyNavigation("home") %}
+                <div class="nhsuk-grid-column-one-half">
+                  <div class="nhsuk-card">
+                    <section class="nhsuk-card__content">
+                      <h3 class="nhsuk-card__heading nhsuk-!-margin-bottom-1">
+                        <a href="{{ item.url | url | pretty }}">{{ item.title }}</a>
+                      </h3>
+                      <p class="nhsuk-body">{{ item.excerpt }}</p>
+                    </section>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </section>
         {% endif %}
+        <div class="nhsuk-grid-column-one-third">
+          <div class="app-related-nav">
+            <h2 class="app-related-nav__heading">
+              Prototype
+            </h2>
+            <nav role="navigation" class="app-related-nav__nav-section">
+              <ul class="app-related-nav__list">
+                <li class="app-related-nav__item">
+                  <a class="app-related-nav__link" href="https://ehic-prototype.herokuapp.com/" target="_blank">
+                    Get healthcare cover for travelling abroad Prototype <span class="nhsuk-u-visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </li>
+              </ul>
+              <h3 class="nhsuk-heading-xs">Login credentials</h3>
+              <ul class="nhsuk-list nhsuk-body-s">
+                <li>
+                  Username: ehic
+                </li>
+                <li>
+                  Password: sprint20
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     {% endblock %}
     </main>
