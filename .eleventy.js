@@ -38,6 +38,7 @@ module.exports = function (eleventyConfig) {
   // Passthrough
   eleventyConfig.addPassthroughCopy('./app/documents');
   eleventyConfig.addPassthroughCopy('./app/images');
+  eleventyConfig.addPassthroughCopy('./app/videos');
   eleventyConfig.addPassthroughCopy({
     'node_modules/nhsuk-frontend/packages/assets': 'assets'
   });

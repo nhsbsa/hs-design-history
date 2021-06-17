@@ -1,6 +1,6 @@
 // Custom scss file
- 
-// TODO the following override gov, we need to fix it so these are no longer needed. 
+
+// TODO the following override gov, we need to fix it so these are no longer needed.
 
 /* font */
 a, p, div, span {
@@ -39,7 +39,7 @@ a:focus {
 
 /* footer links */
 a.nhsuk-footer__list-item-link {
-  color: #4c6272; 
+  color: #4c6272;
 }
 
 a.nhsuk-footer__list-item-link:visited {
@@ -78,7 +78,7 @@ a.nhsuk-footer__list-item-link:visited {
     margin-left: 24px;
   }
   .ie8 .nhsuk-breadcrumb__item {
-    display: none; 
+    display: none;
   }
 }
 /* /. */
@@ -192,4 +192,8 @@ a.nhsuk-footer__list-item-link:visited {
       font-size: 14pt;
       line-height: 1.2
   }
+}
+//Neat video embed
+figure {
+  margin: 0;
 }
