@@ -3,21 +3,9 @@ title: Add a video
 description: How to add a video into your posts
 date:
 ---
-This post will show you how to add a video onto your post.
-
-Example Video:
-
-<figure class="figure_container">
-    <video controls="true" allowfullscreen="true" width="100%">
-        <source src="/videos/test.mp4" type="video/mp4">
-    </video>
-</figure>
-
-How to add a video into a post
-<ul>
-    <li>Add the video to the videos folder</li>
-    <li>Inside the post, add the following:</li>
-</ul>
+## Instructions
+1. Add the video to the app/videos folder
+2. Inside the post, add the following:
 <pre style="position: relative;">
 <code class>
 <span class="hljs-tag">&lt<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure_container"</span>&gt</span>
@@ -27,8 +15,13 @@ How to add a video into a post
 <span class="hljs-tag">&lt&#47<span class="hljs-name">figure</span>&gt</span>
 </code>
 </pre>
-<ul>
-    <li>Make sure to change [video_name] to name of video file including video extension (i.e .mp4)</li>
-    <li>Then re-run using 'npm start' in terminal</li>
-</ul>
+3. Make sure to change video_name to the name of the video file as well as setting the type attribute to the video extension (video/mp4)
+4. Now in terminal run 'npm start' to build the application
 
+## Example
+
+<figure class="figure_container">
+    <video controls="true" allowfullscreen="true" width="100%">
+        <source src="/videos/test.mp4" type="video/mp4">
+    </video>
+</figure>
