@@ -197,3 +197,30 @@ a.nhsuk-footer__list-item-link:visited {
 figure {
   margin: 0;
 }
+
+//code example
+.app-pre {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #d8dde0;
+    margin-top: 0;
+    overflow: auto;
+    padding: 16px;
+    position: relative
+}
+.hljs {
+    background: #f8f8f8;
+    color: #333;
+    display: block;
+    overflow-x: auto;
+    padding: .5em
+}
+.hljs-string{
+    color: #d14
+}
+.hljs-tag,.hljs-name,.hljs-attribute {
+    color: #000080;
+}
+.hljs-attr{
+    color: #007F80
+}

@@ -1,0 +1,7 @@
+{
+    "tags": ["How-Tos"],
+    "eleventyNavigation": {
+        "parent": "How To"
+    }
+}
+
