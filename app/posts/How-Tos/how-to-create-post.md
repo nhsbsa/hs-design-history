@@ -11,15 +11,15 @@ date: 2021-06-22
 
 1. Locate the folder you wish to add a new file to inside of app/posts
 
-<img src="/images/how-to-screenshots/create-post/locate-folder.png">
+<img src="/images/How-tos/create-post/locate-folder.png">
 
 2. Right-click on that folder and select 'New file'
 
-<img src="/images/how-to-screenshots/create-post/new-file.png">
+<img src="/images/How-tos/create-post/new-file.png">
 
 3. Name the file in the following format <code class><span class="hljs-name">YYYY-MM-DD-name-of-post.md</span></code>
 
-<img src="/images/how-to-screenshots/create-post/create-file.png">
+<img src="/images/How-tos/create-post/create-file.png">
 
 4. Copy the following and re-write the title, description and date to match your post
 
@@ -41,6 +41,6 @@ date: 2021-06-22
 
 2. Write a small description regarding the post
 
-<img src="/images/how-to-screenshots/create-post/post-created-script.png">
+<img src="/images/How-tos/create-post/post-created-script.png">
 
 
