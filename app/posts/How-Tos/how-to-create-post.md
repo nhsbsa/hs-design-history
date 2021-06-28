@@ -17,7 +17,9 @@ date: 2021-06-22
 
 <img src="/images/How-Tos/create-post/new-file.png">
 
-3. Name the file in the following format <code class><span class="hljs-name">YYYY-MM-DD-name-of-post.md</span></code>
+3. Name the file in the following format
+
+`YYYY-MM-DD-name-of-post.md`
 
 <img src="/images/How-Tos/create-post/create-file.png">
 

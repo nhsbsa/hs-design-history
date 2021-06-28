@@ -1,6 +1,6 @@
 ---
-title: Create an issue
-description: How to create an issue on GitHub
+title: Submit a post
+description: How to submit a post to be uploaded
 date:
 ---
 
