@@ -18,7 +18,7 @@ date:
 3. Make sure to change video_name to the name of the video file as well as setting the type attribute to the video extension (video/mp4)
 4. Now in terminal run 'npm start' to build the application
 
-## Example
+### Example
 
 <figure class="figure_container">
     <video controls="true" allowfullscreen="true" width="100%">

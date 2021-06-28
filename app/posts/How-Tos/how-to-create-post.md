@@ -39,7 +39,7 @@ date: 2021-06-22
 
 1. Open terminal at the root of the application and run the following script:
 
-<code class><span class="hljs-name">node scripts/generate-post.js Name-of-section/name-of-post</span></code>
+`node scripts/generate-post.js Name-of-section/name-of-post`
 
 2. Write a small description regarding the post
 
