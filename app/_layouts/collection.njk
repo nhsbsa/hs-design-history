@@ -71,7 +71,7 @@
             </h2>
           </div>
           <section class="govuk-grid-column-two-thirds">
-            <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-row phase-cards">
               {% for item in collections.all | eleventyNavigation("home") %}
                 <div class="nhsuk-grid-column-one-half">
                   <div class="nhsuk-card">
@@ -84,6 +84,40 @@
                   </div>
                 </div>
               {% endfor %}
+            </div>
+            {# <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-one-half">
+                  <div class="nhsuk-card">
+                    <section class="nhsuk-card__content">
+                      <h3 class="nhsuk-card__heading nhsuk-!-margin-bottom-1">
+                        <a href="/how-tos">How to</a>
+                      </h3>
+                      <p class="nhsuk-body">Visual instuctions for different tasks</p>
+                    </section>
+                  </div>
+                </div>
+            </div> #}
+            <div class="nhsuk-care-card nhsuk-care-card--non-urgent noT-margin">
+              <div class="nhsuk-care-card__heading-container">
+                <h3 class="nhsuk-care-card__heading"><span role="text">Contribute to the design history</h3>
+                <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+              </div>
+              <div class="nhsuk-care-card__content">
+                <div class="nhsuk-form-group">
+                <p>If you have a post you would like to include in the design history then see contribution guides</p>
+                <p>These include:</p>
+                  <ul>
+                    <li>create a post</li>
+                    <li>submit a post</li>
+                    <li>generate a screenshot post</li>
+                    <li>generate a new section</li>
+                    <li>add a video</li>
+                  </ul>
+                </div>
+                <a href="/how-to">Contribution guides</a>
+                
+
+              </div>
             </div>
           </section>
         {% endif %}

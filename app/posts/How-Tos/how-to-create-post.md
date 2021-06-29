@@ -1,5 +1,5 @@
 ---
-title: How to create a post
+title: Create a post
 description: How to create a new post
 date: 2021-06-22
 ---

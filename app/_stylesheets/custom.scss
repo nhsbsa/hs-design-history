@@ -2,6 +2,11 @@
 
 // TODO the following override gov, we need to fix it so these are no longer needed.
 
+// margins
+.noT-margin {
+  margin-top: 0;
+}
+
 /* font */
 a, p, div, span {
   font-family: Frutiger W01, Arial, Sans-serif;
@@ -193,6 +198,7 @@ a.nhsuk-footer__list-item-link:visited {
       line-height: 1.2
   }
 }
+
 //Neat video embed
 figure {
   margin: 0;
@@ -223,4 +229,9 @@ figure {
 }
 .hljs-attr{
     color: #007F80
+}
+
+// Hide How To's on landing screen
+.phase-cards div:nth-of-type(3) {
+  display: none;
 }

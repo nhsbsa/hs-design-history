@@ -7,7 +7,7 @@ pagination:
     data: collections.How-Tos
     reverse: true
     size: 10
-permalink: "How To's/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}{% endif %}/"
+permalink: "how-to/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}{% endif %}/"
 eleventyComputed:
     eleventyNavigation:
         key: "{{ title }}"
