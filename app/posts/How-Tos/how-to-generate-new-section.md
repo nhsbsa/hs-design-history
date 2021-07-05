@@ -1,6 +1,6 @@
 ---
 title: Generate a new section
-description: How to generate a new section
+description: How to generate a new section on the landing page
 date:
 ---
 
