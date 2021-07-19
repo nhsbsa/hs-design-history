@@ -1,7 +1,7 @@
 # Design history for Get healthcare cover for travelling abroad
 
 A place to document all design history for the service.
-<https://cra-design-history.herokuapp.com/>
+<https://ehic-design-history.herokuapp.com/>
 
 Based on the GOV.UK design history. 
 
