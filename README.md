@@ -1,7 +1,7 @@
 # Design history for Healthy Start
 
 A place to document all design history for the service.
-<https://ehic-design-history.herokuapp.com/>
+<https://healthy-start-design-history.herokuapp.com/>
 
 Based on the GOV.UK design history. 
 
