@@ -1,3 +1,3 @@
 module.exports = {
-  productName: 'Get healthcare cover for travelling abroad'
+  productName: 'Healthy Start Design History'
 }

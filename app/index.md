@@ -1,6 +1,6 @@
 ---
 layout: collection
-title: "Get healthcare cover for travelling abroad"
+title: "Healthy Start"
 description: "Document and share design decisions, keeping a record of designs we have created."
 posts:
   title: Posts

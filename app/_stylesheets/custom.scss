@@ -8,9 +8,12 @@
 }
 
 /* font */
-a, p, div, span {
+body, p, div, span, li {
   font-family: Frutiger W01, Arial, Sans-serif;
-}
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.47368;
+} 
 
 /* links */
 a {
@@ -143,27 +146,6 @@ a.nhsuk-footer__list-item-link:visited {
   padding-left: 0
 }
 
-.app-related-nav__item {
-  font-size: 14px;
-  font-size: .875rem;
-  line-height: 1.71429
-}
-
-@media (min-width: 40.0625em) {
-  .app-related-nav__item {
-      font-size:16px;
-      font-size: 1rem;
-      line-height: 1.5
-  }
-}
-
-@media print {
-  .app-related-nav__item {
-      font-size: 14pt;
-      line-height: 1.2
-  }
-}
-
 .app-related-nav__sub-heading {
   margin-bottom: 8px;
   padding-top: 8px;
@@ -229,9 +211,4 @@ figure {
 }
 .hljs-attr{
     color: #007F80
-}
-
-// Hide How To's on landing screen
-.phase-cards div:nth-of-type(3) {
-  display: none;
 }

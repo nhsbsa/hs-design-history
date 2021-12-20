@@ -1,4 +1,4 @@
-# Design history for Get healthcare cover for travelling abroad
+# Design history for Healthy Start
 
 A place to document all design history for the service.
 <https://ehic-design-history.herokuapp.com/>

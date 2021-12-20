@@ -2,7 +2,7 @@
 tags: false
 layout: collection
 title: Alpha phase
-description: Trying out different solutions to the problems we learned about
+description: Alpha is where you try out different solutions to the problems you learnt about during discovery.
 pagination:
     data: collections.Alpha-phase
     reverse: true

@@ -9,8 +9,8 @@
 
 {% block main %}
   {{ hero({
-    heading: "Get healthcare cover for travelling abroad",
-    text: "Document and share design decisions, keeping a record of designs we have created"
+    heading: "Healthy Start",
+    text: "Document and share design decisions, keeping a record of designs we have created and user research we have gathered"
   }) }}
   {# TODO - Need to grab text from index.md
    {% call appMasthead({
@@ -65,15 +65,10 @@
           </section>
         {# List sections (pages whose parent is `home`) if homepage with no pagination key set #}
         {% elif eleventyNavigation.key == "home" %}
-          <div class="nhsuk-grid-column-two-thirds">
-            <h2 class="nhsuk-heading-l nhsuk-!-font-size-27">
-              {{ sections.title or app.sections.title or "Phases" }}
-            </h2>
-          </div>
           <section class="govuk-grid-column-two-thirds">
             <div class="nhsuk-grid-row phase-cards">
               {% for item in collections.all | eleventyNavigation("home") %}
-                <div class="nhsuk-grid-column-one-half">
+                <div class="nhsuk-grid-column-full">
                   <div class="nhsuk-card">
                     <section class="nhsuk-card__content">
                       <h3 class="nhsuk-card__heading nhsuk-!-margin-bottom-1">
@@ -84,50 +79,6 @@
                   </div>
                 </div>
               {% endfor %}
-            </div>
-
-            <div class="nhsuk-grid-row">
-                <div class="nhsuk-grid-column-one-half">
-                  <h2>Reference</h2>
-                </div>
-                
-            </div>
-
-            <h3 class="govuk-heading-m govuk-!-margin-bottom-1"><a href="glossary">A-Z glossary</a></h3>
-            <p>A collection of terms commonly used across Overseas Healthcare Services (OHS).</p>
-
-            {# <div class="nhsuk-grid-row">
-                <div class="nhsuk-grid-column-one-half">
-                  <div class="nhsuk-card">
-                    <section class="nhsuk-card__content">
-                      <h3 class="nhsuk-card__heading nhsuk-!-margin-bottom-1">
-                        <a href="/how-tos">How to</a>
-                      </h3>
-                      <p class="nhsuk-body">Visual instuctions for different tasks</p>
-                    </section>
-                  </div>
-                </div>
-            </div> #}
-            <div class="nhsuk-care-card nhsuk-care-card--non-urgent noT-margin">
-              <div class="nhsuk-care-card__heading-container">
-                <h3 class="nhsuk-care-card__heading"><span role="text">Contribute to the design history</h3>
-                <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
-              </div>
-              <div class="nhsuk-care-card__content">
-                <div class="nhsuk-form-group">
-                <p>If you have a post you would like to include in the design history then see contribution guides</p>
-                <p>These include:</p>
-                  <ul>
-                    <li>run application locally</li>
-                    <li>create a post</li>
-                    <li>submit a post</li>
-                    <li>generate a screenshot post</li>
-                    <li>generate a new section</li>
-                    <li>add a video</li>
-                  </ul>
-                </div>
-                <a href="/how-to">Contribution guides</a>
-              </div>
             </div>
 
           </section>
@@ -141,31 +92,41 @@
             <nav role="navigation" class="app-related-nav__nav-section">
               <ul class="app-related-nav__list">
                 <li class="app-related-nav__item">
-                  <a class="app-related-nav__link" href="https://ehic-prototype.herokuapp.com/" target="_blank">
-                    Get healthcare cover for travelling abroad Prototype <span class="nhsuk-u-visually-hidden">(opens in a new tab)</span>
+                  <a class="app-related-nav__link" href="https://apply-healthy-start-vouchers.herokuapp.com/" target="_blank">
+                    Apply for Healthy Start Prototype <span class="nhsuk-u-visually-hidden">(opens in a new tab)</span>
                   </a>
                 </li>
               </ul>
-              <h3 class="nhsuk-heading-xs">Login credentials</h3>
+              <h3 class="nhsuk-heading-s">Login credentials</h3>
               <ul class="nhsuk-list nhsuk-body-s">
                 <li>
-                  Username: ehic
+                  Username: NHSBSA
                 </li>
                 <li>
-                  Password: sprint20
+                  Password: NHSBSA
                 </li>
               </ul>
-            <hr>
-            <h2 class="nhsuk-heading-m">
-              UR Reports
-            </h2>
+              <hr>
+              <h2 class="nhsuk-heading-m">
+                UR Reports
+              </h2>
               <ul class="app-related-nav__list">
                 <li class="app-related-nav__item">
-                  <a class="app-related-nav__link" href="https://bsa2468.atlassian.net/wiki/spaces/BP564/pages/1993474251/CRA+Alpha+1" target="_blank">
-                    User Research reports <span class="nhsuk-u-visually-hidden">(opens in a new tab)</span>
+                  <a class="app-related-nav__link" href="#" target="_blank">
+                    Link to UR space <span class="nhsuk-u-visually-hidden">(opens in a new tab)</span>
+                  </a>
+                </li>
+                <li class="app-related-nav__item">
+                  <a class="app-related-nav__link" href="#" target="_blank">
+                    Link to UR space <span class="nhsuk-u-visually-hidden">(opens in a new tab)</span>
                   </a>
                 </li>
               </ul>
+              <hr>
+              <h2 class="nhsuk-heading-m">
+                Contribute
+              </h2>
+              <p>You can also contribute to the Healthy Start design history, for help follow <a href="/how-to">our contribution guides</a>.</p>
             </nav>
           </div>
         </div>

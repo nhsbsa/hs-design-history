@@ -2,7 +2,7 @@
 tags: false
 layout: collection
 title: Beta phase
-description: Focus on making sure the solution chosen works as well as possible
+description: The beta phase is where you take your best idea from alpha and start building it for real. It also involves thinking about how your service will integrate with (or start to replace) existing services, and preparing for the transition to live.
 pagination:
     data: collections.Beta-phase
     reverse: true
