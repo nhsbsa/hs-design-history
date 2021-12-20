@@ -9,7 +9,7 @@ date:
 * post typed up, this can be a file or a link to google docs
 * date post was created
 
-Link to design history repository: [Create an issue](https://github.com/nhsbsa-dean/cra-design-history/issues)
+Link to design history repository: [Create an issue](https://github.com/nhsbsa/hs-design-history/issues/new)
 
 ## Instructions
 1. From the issues tab, start with the green button titled 'New issue'
