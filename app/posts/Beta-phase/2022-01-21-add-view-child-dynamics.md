@@ -1,10 +1,10 @@
 ---
 title: Adding and viewing children in dynamics
 description: Providing a better view of the children data while making the process of adding children quicker and easier.
-date: 
+date: 2022-01-21
 ---
         
-Providing a better view of the children data while making the process of adding children quicker and easier.
+**Providing a better view of the children data while making the process of adding children quicker and easier.**
 
 ## What are we wanting to improve?
 Viewing children details inside of Dynamics is something already available to CCS, at the moment they are only able to view the childs date of birth and the number of children on the claim. We aim to improve this by supplying the childrens full name.
@@ -28,3 +28,6 @@ When a claim does not have a child associated to it, or a baby has been born and
 This is the first part of children details being more manageable in dynamics and next we will be looking into:
 * Edit child details
 * Remove a child
+
+## Related posts
+* [Edit and remove children in dynamics](/Beta-phase/edit-remove-children/)
