@@ -4,6 +4,8 @@ description: Providing the choice to edit a child (children) details in dynamics
 date: 2022-02-18
 ---
 
+{% from "screenshots/macro.njk" import appScreenshots with context %}
+
 **Providing the choice to edit a child (children) details in dynamics as well as removing their details.**
 
 ## What are we wanting to improve?
@@ -19,8 +21,6 @@ We now have a design in place on the prototype, the option to edit a childs deta
 
 We have also now got the option to 'Remove' a child from the claim, this is done by selecting the remove link next to the child, once this is clicked the user will be prompt with a sort of saftey blanket which will confirm that they want to remove the childs details, allowing the user to proceed with the action or cancel.
 
-
-{% from "screenshots/macro.njk" import appScreenshots with context %}
 {{ appScreenshots({
   items: [{
       text: "Edit children",
