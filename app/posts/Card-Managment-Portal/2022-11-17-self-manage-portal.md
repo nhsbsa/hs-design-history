@@ -1,5 +1,5 @@
 ---
-title: Card Managment Portal
+title: Self Managment Portal
 description: Generic Desciption
 date: 
 ---
@@ -19,22 +19,32 @@ Allowing the user to do this will reduce hold and call times for our contact tea
 ## What we have done so far?
 We are targetting our users by age group to make sure each user knows what steps they can take, we plan to check the age entered and direct that user to the correct content if they are not able to complete the application, this will be based off of under 16s, under 18s and then over 18s.
 
-{% from "Card-Managment-Portal/Card-Managment-Portal" import appScreenshots with context %}
+
+{% from "screenshots/macro.njk" import appScreenshots with context %}
 {{ appScreenshots({
   items: [{
-      text: "Original kickout",
-      img: { src: "1" }
+      text: "1",
+      img: { src: "1.jpg" }
     }, {
-      text: "Under 16",
-      img: { src: "02-under-16.png" }
+      text: "2",
+      img: { src: "2.jpg" }
     }, {
-      text: "Under 18",
-      img: { src: "03-under-18.png" }
+      text: "3",
+      img: { src: "3.jpg" }
     }, {
-      text: "Over 18",
-      img: { src: "04-over-18.png" }
+      text: "4",
+      img: { src: "4.jpg" }
+    }, {
+      text: "5",
+      img: { src: "5.jpg" }
+    }, {
+      text: "6",
+      img: { src: "6.jpg" }
+    }, {
+      text: "7",
+      img: { src: "7.jpg" }
+    }, {
+      text: "8",
+      img: { src: "8.jpg" }
     }]
 }) }}
-
-        
-        
