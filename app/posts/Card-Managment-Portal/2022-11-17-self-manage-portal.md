@@ -14,7 +14,7 @@ We want to give them the ability to manage their card without having to call or 
 Allowing the user to do this will reduce hold and call times for our contact teams.
 
 ## What are our user needs?
-
+To quickly manage their Healthy Start account.
 
 ## What we have done so far?
 We are targetting our users by age group to make sure each user knows what steps they can take, we plan to check the age entered and direct that user to the correct content if they are not able to complete the application, this will be based off of under 16s, under 18s and then over 18s.
